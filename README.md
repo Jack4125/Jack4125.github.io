@@ -2,7 +2,7 @@
 
 ## Content
 
-- Portfolio of projects
+- Portfolio
 - Resume
 - Link to GitHub repository
 - Contact information

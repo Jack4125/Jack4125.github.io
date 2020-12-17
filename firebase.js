@@ -1,19 +1,22 @@
 const contactForm = document.querySelector('.contact-form');
 
-// https://www.youtube.com/watch?v=4d-gIPGzmK4&list=PL4cUxeGkcC9itfjle0ji1xOZ2cjRGY_WB&index=1
-// Firebase simulator location path example: "/messages/7wRp8VOY4AHhu4VPZk7X"
-var firebaseConfig = {
-  apiKey: 'AIzaSyB2rA57IguGUtjW1X_bLoJgFM0_K16VVQU',
-  authDomain: 'profile-a1067.firebaseapp.com',
-  databaseURL: 'https://profile-a1067.firebaseio.com',
-  projectId: 'profile-a1067',
-  storageBucket: 'profile-a1067.appspot.com',
-  messagingSenderId: '844308211892',
-  appId: '1:844308211892:web:feecce52e048442e494fe1',
-};
-firebase.initializeApp(firebaseConfig);
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDEthsALu2_sTcuoRE88uwoFYSnjgFDg-A",
+    authDomain: "profile-13744.firebaseapp.com",
+    projectId: "profile-13744",
+    storageBucket: "profile-13744.appspot.com",
+    messagingSenderId: "990941745211",
+    appId: "1:990941745211:web:0efc17ee1fbbc27fa88c1e",
+    measurementId: "G-Y0PSN0ZNTZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
+// Firebase simulator location path example: "/messages/7wRp8VOY4AHhu4VPZk7X"
 const db = firebase.firestore();
+db.settings({ timestampsInSnapshot: true });
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();

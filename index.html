@@ -34,7 +34,7 @@
             Hi, I'm a web developer. Feel free to use any code I put on GitHub ❤️
           </p>
           <br />
-          <p>If you are a friend or client: Hello, please contact me directly if you need anything 😃</p>
+          <p>If you are a friend or client: Hi! Please contact me directly if you need anything 😃</p>
         </div>
 
         <!-- info -->
@@ -80,12 +80,9 @@
           <input class="contact-item" type="email" name="email" placeholder="Email">
           <input class="contact-item" type="text" name="subject" placeholder="Subject">
           <textarea class="contact-item" name="message" placeholder="Message" rows="6"></textarea>
-          <input class="contact-button background-hover g-recaptcha" 
+          <input class="contact-button background-hover" 
             type="submit" 
-            value="Send Message" 
-            data-sitekey="6LckDwMaAAAAAB3N9ZzZUbd7zQCyo3ssJPBsAQI2" 
-            data-callback='onSubmit' 
-            data-action='submit'>
+            value="Send Message">
         </form>
       </section> <!-- .sidebar end -->
 
@@ -168,20 +165,12 @@
 
   <script src="script.js"></script>
 
-  <!-- reCAPTCHA v3 -->
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("contact-form").submit();
-    }
-  </script>
-
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script defer src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
   <!-- TODO: Add SDKs for Firebase products needed
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script defer src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
-  <script defer src="./firebase.js"></script>
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
 </body>
 
 </html>
